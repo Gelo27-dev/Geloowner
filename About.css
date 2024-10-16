@@ -1,0 +1,154 @@
+
+
+        
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('Background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f44336;
+    border-radius: 4px;
+}
+
+.nav-link.login {
+    margin-left: auto;
+    background-color: #f44336;
+    border-radius: 4px;
+}
+
+.nav-link.login:hover {
+    background-color: #d32f2f;
+}
+
+
+#profile {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #f44336;
+}
+
+#profile h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+}
+
+#profile h3 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+#profile p {
+    margin-top: 20px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+
+.favorites {
+    padding: 20px;
+    margin: 20px;
+    overflow-x: auto;
+}
+
+.favorites table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.favorites th, .favorites td {
+    border: 1px solid #f44336;
+    padding: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.favorites th {
+    background-color: #f44336;
+    color: white;
+}
+
+.favorites tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: auto;
+}
+
+footer p {
+    color: white;
+    font-size: 0.9em;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #profile h1 {
+        font-size: 2em;
+    }
+
+    #profile h3 {
+        font-size: 1em;
+    }
+
+    .favorites th, .favorites td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}

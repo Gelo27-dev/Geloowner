@@ -1,0 +1,68 @@
+/* Background styling */
+body {
+    background-image: url('Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f44336;
+    border-radius: 4px;
+}
+
+.nav-link.login {
+    margin-left: auto;
+    background-color: #f44336;
+    border-radius: 4px;
+}
+
+.nav-link.login:hover {
+    background-color: #d32f2f;
+}
+
+/* Form styling */
+.formie {
+    background-image: url('Room.jpg');
+    background-color: aqua;
+    padding: 75px 125px;
+    font-size: 12px;
+    height: 280px;
+    width: 250px;
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* Label and heading styles */
+label {
+    color: white;
+}
+
+h1 {
+    color: antiquewhite;
+}
+
+/* Footer styling */
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
